@@ -1,0 +1,59 @@
+@import "./base.css";
+
+@media all {
+  body {
+    display: flex;
+    place-items: flex-start;
+  }
+
+  #app {
+    max-width: 340px;
+    
+    font-weight: normal;
+    display: grid;
+    padding: 2rem 2rem;
+  }
+  .icon{
+    margin: 0 5px;
+    flex-basis: 9% !important;
+    font-size: 20px;
+  }
+  .gear{
+    flex-basis: 9% !important;
+    font-size: 28px;
+  }
+  .gear:hover{
+    cursor: pointer;
+  }
+  .cards{
+    width: 99.5%;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black; 
+  }
+  .cards:last-child{
+    border-radius: 0 0 10px 10px;
+  }
+  .toolbar{
+    border-radius: 10px 10px 0 0;
+    flex-basis: 80%;
+    height: 35px;
+    color: #f8f8f8;
+    background-color: #00487C;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .grid-row{
+    width: 325px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+  .grid-item {
+    text-align: start;
+    flex-basis: 50%;
+    max-height: 150px; /*optional*/
+  }
+}
